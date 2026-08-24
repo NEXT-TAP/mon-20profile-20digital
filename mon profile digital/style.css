@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(124, 58, 237, 0.20),
+      transparent 35%
+    ),
+    #050505;
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 30px 15px;
+}
+
+
+.profile-container {
+  width: 100%;
+  max-width: 480px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-card {
+  position: relative;
+
+  text-align: center;
+
+  padding: 40px 25px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.07),
+    rgba(255,255,255,0.02)
+  );
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+}
+
+
+.profile-glow {
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -100px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: #7c3aed;
+
+  filter: blur(100px);
+
+  opacity: 0.35;
+
+  pointer-events: none;
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-image {
+  position: relative;
+
+  width: 120px;
+  height: 120px;
+
+  margin: auto;
+
+  padding: 4px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #a855f7,
+    #6d28d9
+  );
+
+  box-shadow:
+    0 0 35px rgba(139,92,246,0.35);
+}
+
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  object-position: center center;
+}
+
+
+h1 {
+  position: relative;
+
+  margin-top: 20px;
+
+  font-size: 27px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+
+.profession {
+  position: relative;
+
+  margin-top: 7px;
+
+  color: #a78bfa;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.bio {
+  position: relative;
+
+  margin: 14px auto 25px;
+
+  max-width: 320px;
+
+  color: #a1a1aa;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   ADD CONTACT
+========================= */
+
+.contact-btn {
+  position: relative;
+
+  width: 100%;
+
+  border: none;
+
+  border-radius: 15px;
+
+  padding: 16px;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6d28d9
+  );
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  box-shadow:
+    0 10px 30px rgba(109,40,217,0.25);
+
+  transition: 0.25s ease;
+}
+
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 15px 35px rgba(109,40,217,0.4);
+}
+
+
+.contact-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* =========================
+   CONTACT LIST
+========================= */
+
+.contact-list {
+  margin-top: 18px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+.contact-item {
+  text-decoration: none;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 15px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.045);
+
+  border: 1px solid rgba(255,255,255,0.07);
+
+  transition: 0.25s ease;
+}
+
+
+.contact-item:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255,255,255,0.07);
+
+  border-color: rgba(139,92,246,0.3);
+}
+
+
+/* ICON */
+
+.icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 19px;
+}
+
+
+.phone {
+  background: rgba(59,130,246,0.12);
+
+  color: #60a5fa;
+}
+
+
+.whatsapp {
+  background: rgba(34,197,94,0.12);
+
+  color: #4ade80;
+}
+
+
+.email {
+  background: rgba(168,85,247,0.12);
+
+  color: #c084fc;
+}
+
+
+/* CONTACT TEXT */
+
+.contact-info {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.contact-info span {
+  color: #8f8f98;
+
+  font-size: 12px;
+}
+
+
+.contact-info strong {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  word-break: break-word;
+}
+
+
+.arrow {
+  color: #666;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+
+  margin-top: 25px;
+
+  padding-bottom: 10px;
+
+  color: #555;
+
+  font-size: 11px;
+}
+
+
+footer strong {
+  color: #8b5cf6;
+
+  margin-left: 3px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  body {
+    padding: 18px 12px;
+  }
+
+  .profile-card {
+    padding: 32px 18px 25px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+}
