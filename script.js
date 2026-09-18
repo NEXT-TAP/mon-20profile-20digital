@@ -2,14 +2,18 @@
 // ADD TO CONTACTS
 // ========================================
 
+// ========================================
+// ADD TO CONTACTS
+// ========================================
+
 const addContactBtn = document.getElementById("addContactBtn");
 
 addContactBtn.addEventListener("click", async () => {
 
     try {
 
-        // تحميل الصورة
-        const response = await fetch("images/logo.png");
+        // تحميل صورة البروفايل
+        const response = await fetch("image/profile.jpeg");
         const imageBlob = await response.blob();
 
         // تحويل الصورة إلى Base64
@@ -23,9 +27,9 @@ addContactBtn.addEventListener("click", async () => {
 VERSION:3.0
 FN:Ayoub Mouaddine
 TEL;TYPE=CELL:+212700202866
-URL;TYPE=INTERNET:https://www.instagram.com/_nex_tap_?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+URL:https://www.instagram.com/_nex_tap_/
 EMAIL:ayoubmouaddine817@gmail.com
-PHOTO;ENCODING=b;TYPE=PNG:${base64Image}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
 
             const blob = new Blob(
