@@ -59,6 +59,6 @@ END:VCARD`;
 
         console.error("Erreur:", error);
 
-    }N +
+    }
 
 });
