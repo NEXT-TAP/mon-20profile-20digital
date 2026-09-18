@@ -23,6 +23,7 @@ addContactBtn.addEventListener("click", async () => {
 VERSION:3.0
 FN:Ayoub Mouaddine
 TEL;TYPE=CELL:+212700202866
+URL;TYPE=INTERNET:https://www.instagram.com/_nex_tap_?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
 EMAIL:ayoubmouaddine817@gmail.com
 PHOTO;ENCODING=b;TYPE=PNG:${base64Image}
 END:VCARD`;
@@ -58,6 +59,6 @@ END:VCARD`;
 
         console.error("Erreur:", error);
 
-    }
+    }N +
 
 });
